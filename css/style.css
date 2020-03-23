@@ -1,0 +1,202 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url("../images/bg-body.png");
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* HEADER */
+header img {
+  width: 120px;
+  margin: 20px;
+  clip-path: circle(60px at center);
+}
+
+.fa-bars {
+  text-align: center;
+  color: white;
+  padding: .5em;
+  background-color: #aaa;
+}
+
+.nav {
+  height: auto;
+  text-align: center;
+}
+
+.nav-item a {
+  background-color: #aaa;
+  margin-top: 0.2em;
+  color: white;
+}
+
+.more {
+  display: none;
+}
+
+/* BANNER */
+.banner img {
+  width: 100%;
+  display: none;
+}
+
+/* FOOTER */
+.main-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.main-footer ul li {
+  padding: 0.5em;
+  background-color: red;
+  margin-top: 0.2em;
+}
+
+
+.main-footer ul li a {
+  color: white;
+  text-transform: capitalize;
+}
+
+
+/* PRODUCTS */
+.photo-container {
+  position: relative;
+}
+
+.photo-container .photo {
+  width: 100%;
+}
+
+.photo-container .special {
+  position: absolute;
+  top: 0;
+  right: 1em;
+}
+
+.product .more {
+  border-radius: 0;
+}
+
+.photo-container .zoom {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  background-color: rgba(10,10,10,.5);
+  color: white;
+  text-transform: uppercase;
+  padding: 0.4em;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* HEADER */  
+  .nav {
+    height: 50px;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+  
+  .nav-item a {
+    /* margin-right: 20px; */
+    background-color: #aaa;
+    font-size: .75rem;
+  }
+  
+  .nav-item:nth-child(6) {
+    margin-right: 0;
+  }
+
+  /* BANNER */
+  .banner img {
+    width: 100%;
+    display: block;
+  }
+
+  /* PRODUCTS */
+  .vip-products h2 {
+    font-size: 1.5rem;
+  }
+
+  .vip-products p {
+    font-size: .9rem;
+  }
+
+  .photo-container .zoom {
+    padding: 0.2em;
+    font-size: .9rem;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px){
+  h2 {
+    margin-top: 0.5em;
+    font-size: 1.5rem;
+  }
+  
+  /* HEADER */  
+  .nav {
+    height: 50px;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+  
+  .nav-item a {
+    /* margin-right: 20px; */
+    background-color: #aaa;
+  }
+  
+  .nav-item:nth-child(6) {
+    margin-right: 0;
+  }
+  
+  /* BANNER */
+  .banner img {
+    width: 100%;
+    display: block;
+  }
+  
+  /* PRODUCTS */
+  .more {
+    display: inline-block;
+  }
+  
+  /* FOOTER */
+  .main-footer {
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 15px 15px 0px 0px;
+  }
+  
+  .main-footer ul li {
+    display: inline-block;
+  }
+  
+  .main-footer ul li a {
+    color: white;
+    text-transform: capitalize;
+  }
+  
+  .main-footer ul li::after{
+    content: "  |  ";
+    color: white;
+  }
+  
+  .main-footer ul li:last-child::after{
+    content: "";
+  }
+}
